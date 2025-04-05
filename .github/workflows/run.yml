@@ -22,7 +22,7 @@ jobs:
             - run: go version
             - name: Just Run
               run: |
-                go run ./${{ inputs.file }}.go
+                go run ${{ inputs.file }}.go
             - name: Build & Run
               run: |
                 ls
