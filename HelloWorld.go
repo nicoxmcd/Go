@@ -1,11 +1,18 @@
 /*
 Stevens Institute of Technology
 */
-package main //package declaration: main
 
-import "fmt" //import statement: fmt, Println comes from this package
+//package declaration: main
+package main 
 
-func main() { //function declaration: main
+//import statement: fmt, Println comes from this package
+import ( 
+	"fmt"
+	t "time"
+  ) 
+
+//function declaration: main
+func main() { 
 	fmt.Println("Hello World")
 	fmt.Println(t.Now())
 }
