@@ -17,9 +17,10 @@ jobs:
             - name: Checkout Repository
               uses: actions/checkout@v4
             - uses: actions/setup-go@v5
+              with:
+                go-version: 'stable'
             - run: go version
-            - run: |
-                 go run HelloWorld.go
+            - run: go run HelloWorld.go
 
 
 
