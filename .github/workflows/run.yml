@@ -18,12 +18,8 @@ jobs:
               uses: actions/checkout@v4
             - uses: actions/setup-go@v5
             - run: go version
-            # - name: Just Run
-            #   run: |
-            #     go run ${{ inputs.file }}.go
-            - name: Build & Run
-              run: |
-                ls
-                go build ${{ inputs.file }}.go
-                ls
-                ./${{ inputs.file }}
+            - run: |
+                 go run HelloWorld.go
+
+
+
